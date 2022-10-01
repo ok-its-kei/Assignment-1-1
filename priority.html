@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priority List</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="priority.css" />
+</head>
+<body>
+    <main class="page">
+
+        <section class="greeting">
+            <h2 class="title">
+                How's it going, <input type="text" id="name" placeholder="Name here">
+            </h2>
+        </section>
+        <section class="create-priority">
+            <h3>CREATE A PRIORITY</h3>
+            <form id="new-priority-form">
+                <input 
+                    type="text" 
+                    name="content" 
+                    id="content" 
+                    placeholder="e.g learn programming">
+
+                    <h4>Choose a type</h4>
+                    <div class="options">
+
+                        <label>
+                            <input 
+                                type="radio"
+                                name="type"
+                                id="type 1"
+                                value="top">
+                                <span class="bubble top"></span>
+                                <div>Top priority</div>
+                        </label>
+                    
+                        <label>
+                            <input 
+                                type="radio"
+                                name="type"
+                                id="type 2"
+                                value="common">
+                                <span class="bubble common"></span>
+                                <div>Common priority</div>
+                        </label>
+
+                    </div>
+
+                    <input type="submit" value="Write priority">
+            </form>
+        </section>
+
+        <section class="priority-list">
+            <h3>PRIORITY LIST</h3>
+            <div class="list" id="priority-list">
+
+                <!-- <div class="priority-item done">
+                    <label>
+                        <input type="checkbox">
+                        <span class="bubble top"></span>
+                    </label>
+
+                    <div class="priority-content">
+                        <input type="text" value="learn programming" readonly>
+                    </div>
+
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+
+                <div class="priority-item">
+                    <label>
+                        <input type="checkbox">
+                        <span class="bubble common"></span>
+                    </label>
+
+                    <div class="priority-content">
+                        <input type="text" value="learn coding" readonly>
+                    </div>
+
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div> -->
+
+            </div>
+        </section>
+
+    </main>
+    <script src="priority.js"></script>
+</body>
+</html>
